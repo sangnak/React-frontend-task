@@ -1,0 +1,42 @@
+import { useDispatch, useSelector } from "react-redux"
+import { addTodo } from "../../Redux/action"
+import { useState } from "react"
+import axios from 'axios'
+
+
+
+const Todos = () => {
+    const todos = useSelector((store) =>store.todos)
+
+    const disptach = useDispatch()
+    var todoss=0
+
+    const [text, setText] = useState("")
+    console.log("Re-Rendered Todos", todoss++)
+    console.log("hey i am todos array" , todos)
+  return (
+    <div>
+   <hr />
+   <h3>Todos App in Redux</h3>
+   <input onChange={ (e) => setText(e.target.value)}       type="text"  placeholder="Enter Todo" />
+   <button  onClick={() =>{
+      //  disptach(addTodo({id:Date.now(),title:text, status:false}))
+
+      axios.post("http://localhost:3001/todos", {
+      
+        title:text,
+        status:false
+      });
+
+       
+   }} >Add Todo</button>
+   <br /><br />
+
+
+    <div>{todos.map((e)=>(<div key={e.id}  style={{background:"pink" , color:"black"}} >
+        {e.title} { e.status} </div>))} </div>
+    </div>
+  )
+}
+
+export default Todos

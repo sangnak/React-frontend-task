@@ -1,0 +1,49 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "Learning Redux",
+      "status": "true"
+    },
+    {
+      "title": "Aaj Redux Complete hona chahiye",
+      "status": false,
+      "id": "-jw9YoD"
+    },
+    {
+      "title": "Ye Allah help me to get a Great job offer",
+      "status": false,
+      "id": "ZPiIgOt"
+    },
+    {
+      "title": "Redux devtool",
+      "status": false,
+      "id": "CcicXYM"
+    },
+    {
+      "title": "hi",
+      "status": false,
+      "id": "AYu_JK7"
+    },
+    {
+      "title": "hi",
+      "status": false,
+      "id": "x11Q5sP"
+    },
+    {
+      "title": "hiiii",
+      "status": false,
+      "id": "nfFr9Tl"
+    },
+    {
+      "title": "fhghjgh",
+      "status": false,
+      "id": "jqOayXC"
+    },
+    {
+      "title": "tyytjyt",
+      "status": false,
+      "id": "Kx3Khze"
+    }
+  ]
+}
